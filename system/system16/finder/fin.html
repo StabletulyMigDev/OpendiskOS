@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OpenDiskOS</title>
+	<link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+
+  <script>
+    function shutdown() {
+      window.close();
+    }
+  </script>
+ 
+
+	<ul role="menu-bar">
+  <li role="menu-item" tabindex="0" aria-haspopup="true">
+    File
+    <ul role="menu">
+      <li role="menu-item"><a href="./about.html">About OpenDiskOS</a></li>
+      <li role="menu-item"><a href="#menu">Preferences</a></li>
+      <li role="menu-item"><a href="./xplore.html">Files</a></li>
+      <li role="menu-item"><a href="./find.html">Find</a></li>
+    </ul>
+  </li>
+  <li role="menu-item" tabindex="0" aria-haspopup="true">
+    Edit
+    <ul role="menu">
+      <li role="menu-item"><a href="#menu">Action</a></li>
+      <li role="menu-item"><a href="#menu">Another Action</a></li>
+      <li role="menu-item" class="divider"><a href="#menu">Something else here</a></li>
+    </ul>
+  </li>
+  <li role="menu-item" tabindex="0" aria-haspopup="true">
+    View
+    <ul role="menu">
+      <li role="menu-item"><a href="#menu">Action</a></li>
+      <li role="menu-item"><a href="#menu">Another Action</a></li>
+      <li role="menu-item"><a href="#menu">Something else here</a></li>
+    </ul>
+  </li>
+   <li role="menu-item" tabindex="0" aria-haspopup="true">
+       Applications
+        <ul role="menu">
+          <li role="menu-item"><a href="../internet.ligx/app.html">The Internet</a></li>
+            <li role="menu-item"><a href="../noter.ligx/app.html">Noter</a></li>
+       </ul>
+        </li>
+  <li role="menu-item" tabindex="0" aria-haspopup="true">
+    Special
+    <ul role="menu">
+      <li role="menu-item"><a onclick="shutdown()">ShutDown</a></li>
+      <li role="menu-item"><a href="#menu">Restart</a></li>
+      <li role="menu-item"><a href="#menu">sys16-base</a></li>
+    </ul>
+  </li>
+</ul>
+
+   <div class="window">
+  <div class="title-bar">
+    <button aria-label="Close" class="close" onclick="#"></button>
+    <h1 class="title">Welcome</h1>
+    <button aria-label="Resize" class="resize"></button>
+  </div>
+  <div class="separator"></div>
+
+  <div class="window-pane">
+  	<img src="../../loginui/Vectorlogo.png">
+    <h1>Welcome to OpenDiskOS!</h1>
+    <p>The first fantasy operating system made in html!</p>
+  </div>
+</div>
+
+</body>
+</html>
