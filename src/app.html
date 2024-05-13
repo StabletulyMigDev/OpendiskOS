@@ -6,7 +6,7 @@
     <title>SYSTEMRUNNER</title>
     <link rel="stylesheet" href="./system.css">
     <style>
-        #draggable { width: 300px; height: 300px; padding: 0.5em; border: 0;}
+        #draggable { width: 300px; height: 300px; padding: 0.5em; border: 0;};
         </style>
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
@@ -14,15 +14,44 @@
         $( function() {
           $( "#draggable" ).draggable();
         } );
+
+        function loadapp() {
+
+        }
         </script>
 </head>
 <body>
     <div class="progman">
         <div id="draggable" class="ui-widget-content">
           <div class="window">
-            <div class="title"></div>
+            <div class="title-bar">
+              <button aria-label="Close" class="close"></button>
+              <h1 class="title">Program starter</h1>
+              <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+          
+            <div class="window-pane">
+              <p>Enter Application folder adress</p>
+              <input id="openprgbox" type="text" placeholder="ftp/http_.libx"/>
+              <button class="btn" id="openprgbtn">Open</button>
+            </div>
           </div>
         </div>
+    </div>
+
+    <div id="draggable"class="ui-widget-content">
+      <div class="window">
+        <div class="title-bar">
+          <button aria-label="Close" class="close"></button>
+          <h1 class="title">WorkSpace</h1>
+          <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+          
+        <div class="window-pane">
+        </div>
+      </div>
     </div>
 </body>
 </html>
